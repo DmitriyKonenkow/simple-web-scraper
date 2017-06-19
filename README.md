@@ -23,3 +23,7 @@ Application parts
 - parse url for links
 - parse url for tables
 - save data to file
+
+
+url -> html -> resources -> save to files
+            -> text -> parsed text
