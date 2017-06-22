@@ -35,7 +35,7 @@ public class DownloadPageTask implements Runnable {
         }
     }
 
-    HtmlPage downloadUrl(String url_string) throws IOException {
+    public static HtmlPage downloadUrl(String url_string) throws IOException {
         try (final WebClient webClient = new WebClient(BrowserVersion.BEST_SUPPORTED)) {
             webClient.getOptions().setThrowExceptionOnScriptError(false);
             return webClient.getPage(url_string);
